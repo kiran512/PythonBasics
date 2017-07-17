@@ -22,11 +22,10 @@ def word_transformer(word):
     # your code here
     if(word == 'NOUN'):
        return random_noun()
+    if(word == 'VERB'):
+       return random_verb()
     else:
-        if(word == 'VERB'):
-            return random_verb()
-        else:
-            return word[0]
+       return word[0]
 
 print(word_transformer("NOUN"))
 print(word_transformer("VERB"))
